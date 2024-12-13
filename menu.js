@@ -97,21 +97,28 @@
         'All': [
             { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/darklightmode.js')
     .then(response => response.text())  
-    .then(scriptText => eval(scriptText))   },
+    .then(scriptText => eval(scriptText))   
+            },
             { text: 'Draw On website', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js')
     .then(response => response.text())  
-    .then(scriptText => eval(scriptText))   },
+    .then(scriptText => eval(scriptText))   
+            },
             { text: 'Auto Clicker', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
     .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  },
-            { text: 'Snake', action: () => alert('Snake Game Coming Soon!') },
-           { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
+    .then(scriptText => eval(scriptText))  
+            },
+            { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
     .then(response => response.text())  
-    .then(scriptText => eval(scriptText))   },
+    .then(scriptText => eval(scriptText))   
+           },
             { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
   },
+          { text: 'Chrome Dino Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: '3D Webpage', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/3Dpage.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -126,7 +133,7 @@
             }
         ],
         'Games': [
-            { text: 'Snake', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
+            { text: 'Snake X More Menu Mod', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             }     
@@ -146,11 +153,19 @@
             }
         ],
         'Game Cheats': [
-            { text: 'Blooket Cheats', action: () => alert("Level 2 Executor Required")
- },
-            { text: 'Prodigy Cheats', action: () => alert("Level 2 Executor Required")
+            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/BlooketGUI.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
+},
+            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Prodigy-menu@main/Menu.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
  },
           { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Chrome Dino Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -248,7 +263,7 @@
 
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
-        content.innerHTML = ''; 
+        content.innerHTML = '';
         const allButtons = buttonGroups['All'];
         const filteredButtons = allButtons.filter(({ text }) =>
             text.toLowerCase().includes(query)
