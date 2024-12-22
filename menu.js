@@ -1,5 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
+  
+  console.log("%c Executor V1.5 %c\n Credits: Wasd", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem");
 
     const menu = document.createElement('div');
     menu.id = 'executor-menu';
@@ -55,7 +57,7 @@
     buttonContainer.appendChild(maximizeButton);
 
     const title = document.createElement('div');
-    title.innerText = 'Executor v1';
+    title.innerText = 'Executor v1.5';
     title.style.marginLeft = 'auto';
     title.style.marginRight = '';
     title.style.fontSize = '14px';
@@ -92,10 +94,10 @@
     sidebar.style.boxSizing = 'border-box';
     menu.appendChild(sidebar);
 
-    const sidebarButtons = ['All', 'Games', 'Useful', 'Game Cheats', 'Fun', 'Settings'];
+    const sidebarButtons = ['All', 'Games', 'Tools', 'Game Cheats', 'Fun', 'Settings'];
     const buttonGroups = {
         'All': [
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/darklightmode.js')
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -107,9 +109,37 @@
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
-            { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
+           { text: 'Snow', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
+            },
+            { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
+          { text: 'History Flooder', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Dev Console', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
+          { text: 'Dictionary', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Ad Blocker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+             { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
            },
             { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
     .then(response => response.text())  
@@ -138,12 +168,28 @@
     .then(scriptText => eval(scriptText))  
             }     
         ],
-        'Useful': [
+        'Tools': [
             { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/darklightmode.js')
+          { text: 'History Flooder', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Dictionary', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Ad Blocker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Dev Console', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
@@ -153,7 +199,7 @@
             }
         ],
         'Game Cheats': [
-            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/BlooketGUI.js')
+            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
 },
@@ -180,6 +226,14 @@
         ],
         'Fun': [
             { text: 'Draw On website', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
+          { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
+          { text: 'Snow', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
