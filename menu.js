@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
   
-  console.log("%c Executor V1.5 %c\n Credits: Wasd", "color: #0bc2cf; font-size: 3rem", "color: #8000ff; font-size: 1rem");
+  console.log("        .            )        )\r\n                  (  (|              .\r\n              )   )\\\/ ( ( (\r\n      *  (   ((  \/     ))\\))  (  )    )\r\n    (     \\   )\\(          |  ))( )  (|\r\n    >)     ))\/   |          )\/  \\((  ) \\\r\n    (     (      .        -.     V )\/   )(    (\r\n     \\   \/     .   \\            .       \\))   ))\r\n       )(      (  | |   )            .    (  \/\r\n      )(    ,\'))     \\ \/          \\( `.    )\r\n      (\\>  ,\'\/__      ))            __`.  \/\t   .\r\n     ( \\   | \/  ___   ( \\\/     ___   \\ | ( (\r\n      \\.)  |\/  \/   \\__      __\/   \\   \\|  ))\t.\r\n     .  \\. |>  \\      | __ |      \/   <|  \/\r\n          )\/    \\____\/ :..: \\____\/     \\ <\r\n   )   \\ (|__  .      \/ ;: \\          __| )  (\r\n  ((    )\\)  ~--_     --  --      _--~    \/  ))\r\n   \\    (    |  ||               ||  |   (  \/\r\n         \\.  |  ||_             _||  |  \/\r\n )         > :  |  ~V+-I_I_I-+V~  |  : (.     (\r\n          (  \\:  T\\   _     _   \/T  : .\/   )\t\t\r\n           \\  :    T^T T-+-T T^T    ;<\t\t.\r\n  .         \\..`_       -+-       _\'  )\r\n               . `--=.._____..=--\'. .\/         (\r\n        ) (          )             ( \n%c Executor V1.5 %c\n            Credits: Wasd", "color: #ff2b1c; font-size: 3rem", "color: #ff740a; font-size: 1rem");
 
     const menu = document.createElement('div');
     menu.id = 'executor-menu';
