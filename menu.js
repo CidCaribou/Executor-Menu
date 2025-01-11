@@ -133,7 +133,7 @@ document.body.appendChild(menu);
     const sidebarButtons = ['All', 'Games', 'Tools', 'Game Cheats', 'Fun'];
     const buttonGroups = {
         'All': [
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile.js')
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile2.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -261,7 +261,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile.js')
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile2.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
