@@ -33,12 +33,6 @@ menu.style.cssText = `
 
 document.body.appendChild(menu);
 
-  menu.addEventListener('scroll', (event) => {
-  if (menu.scrollTop > 200) { 
-    menu.scrollTop = 200;
-  }
-});
-
     const header = document.createElement('div');
     header.style.width = '100%';
     header.style.display = 'flex';
@@ -65,24 +59,6 @@ document.body.appendChild(menu);
         btn.style.cursor = 'pointer';
         return btn;
     };
-
-  const createSettingsButton = () => {
-    const settingsBtn = document.createElement('button');
-    settingsBtn.textContent = 'Settings';
-    settingsBtn.style.padding = '10px 20px';
-    settingsBtn.style.borderRadius = '5px';
-    settingsBtn.style.border = '1px solid rgba(0,0,0,0.1)';
-    settingsBtn.style.background = '#f0f0f0';
-    settingsBtn.style.cursor = 'pointer';
-    settingsBtn.style.fontSize = '14px';
-    settingsBtn.style.marginTop = '10px';
-
-    settingsBtn.addEventListener('click', () => {
-        alert('Settings button clicked!');
-    });
-
-    return settingsBtn;
-};
 
     const closeButton = createButton('#ff5f57');
     const minimizeButton = createButton('#ffbd2e');
@@ -133,7 +109,7 @@ document.body.appendChild(menu);
     const sidebarButtons = ['All', 'Games', 'Tools', 'Game Cheats', 'Fun'];
     const buttonGroups = {
         'All': [
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile2.js')
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -141,7 +117,11 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
-          { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/mainfile.js')
+          { text: 'Inspect (Toggle)', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -237,6 +217,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Inspect (Toggle)', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Ego-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/ego-client.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -261,7 +245,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/mainfile2.js')
+            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
@@ -275,7 +259,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
 },
-            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/mainfile.js')
+            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -332,27 +316,13 @@ document.body.appendChild(menu);
     content.style.display = 'block';
 
     function displayButtons(groupName) {
-    content.innerHTML = ''; 
-    const buttonsToDisplay = buttonGroups[groupName];
-
-    buttonsToDisplay.forEach(({ text, action }) => {
-        const button = createButtonElement(text, action);
-        content.appendChild(button);
-
-        button.style.opacity = 0;
-        button.style.display = 'block';
-
-        let opacity = 0;
-        const fadeIn = setInterval(() => {
-            opacity += 0.1;
-            button.style.opacity = opacity;
-
-            if (opacity >= 1) {
-                clearInterval(fadeIn); 
-            }
-        }, 30); 
-    });
-}
+        content.innerHTML = '';
+        const buttonsToDisplay = buttonGroups[groupName];
+        buttonsToDisplay.forEach(({ text, action }) => {
+            const button = createButtonElement(text, action);
+            content.appendChild(button);
+        });
+    }
 
 const settingsButton = document.createElement('button');
 settingsButton.innerHTML = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXtJREFUSEu1letRxDAMhPc6gUqASoBKgEqASoBKoBPgy3gzi+JzzMDpjyeJrX1IVg46cRxOnF+zAJeS7iSxEq+SHto65DgL8C7prGQC5GrPgRkAEgNAeP9nez6X9DEC6QHYDhgS920lEQmJVPQUAG/fSvN5U4MbSY8dRtXzWpM8cpsgVYGlw8Kej4oJEIQggELUslKbxboEMPu0wswAo4vYw3crqv7bulVFD8C+P7dkWeS04gfTpgQCBAqWGlaLzJKk7hAs4CAHYEbwDnvcqkkCm7B1iV4XWaa/+Xll1erD+7ST+m3sHQFYQQ8A9i9B0gp2AbDIfW8AEtkOpJPEFtFt2DZlUW7yQUj+psgQYf+wi3ozhkPXrdiAZsGzs4ZtmiMAmzw5Zy6a74YvmkdKt01dg2Rmxr5YKHId6mQZjgo20/MXccq+Zlt7pPhSsrJvo3ZmXNeWJNmfxnWVnLWpo2L1unfo2E3u7fXU9IT991/mMYK772dqsJtktOEL4YBvGcKicUQAAAAASUVORK5CYII=" alt="Settings Icon" style="width: 20px; margin-right: 8px; vertical-align: middle;"> Settings`;
