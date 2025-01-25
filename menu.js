@@ -26,13 +26,13 @@ menu.style.cssText = `
   overflow: hidden;
   transition: opacity 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
   opacity: 0; `;
-
+  
   setTimeout(() => {
   menu.style.opacity = '1'; 
 }, 10);
 
 document.body.appendChild(menu);
-
+  
     const header = document.createElement('div');
     header.style.width = '100%';
     header.style.display = 'flex';
@@ -125,6 +125,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
+          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
             { text: 'Auto Clicker', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -214,6 +218,10 @@ document.body.appendChild(menu);
     .then(scriptText => eval(scriptText))  
  },
           { text: 'Fps Viewer', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -314,6 +322,7 @@ document.body.appendChild(menu);
     content.style.height = 'calc(100% - 60px)';
     content.style.overflowY = 'auto';
     content.style.display = 'block';
+  
 
     function displayButtons(groupName) {
         content.innerHTML = '';
@@ -515,7 +524,6 @@ const showToast = (message, icon) => {
     });
 
     closeButton.addEventListener('click', () => {
-
     menu.style.transition = 'opacity 0.2s ease-out'; 
     menu.style.opacity = '0';
 
@@ -523,7 +531,7 @@ const showToast = (message, icon) => {
         menu.remove();
     }, { once: true }); 
 });
-
+  
   maximizeButton.addEventListener('click', () => {
   Swal.fire({
   title: "Fullscreen Not Finished",
@@ -531,6 +539,7 @@ const showToast = (message, icon) => {
   icon: "error"
 });
   });
+
 
     let isMinimized = false;
     minimizeButton.addEventListener('click', () => {
