@@ -121,6 +121,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
@@ -243,6 +247,10 @@ document.body.appendChild(menu);
         ],
         'Tools': [
             { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -542,19 +550,11 @@ const showToast = (message, icon) => {
     let offsetX = 0, offsetY = 0;
 
     header.addEventListener('mousedown', (e) => {
-    if (
-        e.target === searchInput || 
-        e.target === maximizeButton || 
-        e.target === minimizeButton || 
-        e.target === closeButton
-    ) {
-        return;
-    }
-    isDragging = true;
-    offsetX = e.clientX - menu.offsetLeft;
-    offsetY = e.clientY - menu.offsetTop;
-    header.style.cursor = 'grabbing';
-});
+        isDragging = true;
+        offsetX = e.clientX - menu.offsetLeft;
+        offsetY = e.clientY - menu.offsetTop;
+        header.style.cursor = 'grabbing';
+    });
 
     document.addEventListener('mousemove', (e) => {
         if (isDragging) {
