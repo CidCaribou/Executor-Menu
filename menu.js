@@ -133,6 +133,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'WebGL-Fluid-Simulation', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
             { text: 'Auto Clicker', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -237,6 +241,10 @@ document.body.appendChild(menu);
     .then(scriptText => eval(scriptText))  
             },
           { text: '2048', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
+          { text: 'WebGL-Fluid-Simulation', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
