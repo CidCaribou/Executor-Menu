@@ -558,11 +558,19 @@ const showToast = (message, icon) => {
     let offsetX = 0, offsetY = 0;
 
     header.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        offsetX = e.clientX - menu.offsetLeft;
-        offsetY = e.clientY - menu.offsetTop;
-        header.style.cursor = 'grabbing';
-    });
+    if (
+        e.target === searchInput || 
+        e.target === maximizeButton || 
+        e.target === minimizeButton || 
+        e.target === closeButton
+    ) {
+        return;
+    }
+    isDragging = true;
+    offsetX = e.clientX - menu.offsetLeft;
+    offsetY = e.clientY - menu.offsetTop;
+    header.style.cursor = 'grabbing';
+});
 
     document.addEventListener('mousemove', (e) => {
         if (isDragging) {
