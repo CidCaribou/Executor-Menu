@@ -125,20 +125,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
- },
             { text: 'Auto Clicker', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
-            },
-          { text: '2048', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
-            },
-          
-          { text: 'MineCraft (Offline)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
@@ -170,17 +157,9 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))
- },
           { text: 'Dev Console', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
- },
-          { text: 'Blooket Bot', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))
  },
           { text: 'Car-Axle-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/car-axle-client.js')
     .then(response => response.text())  
@@ -231,15 +210,7 @@ document.body.appendChild(menu);
             { text: 'Snake X More Menu Mod', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
-            },
-          { text: '2048', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
-            },
-          { text: 'MineCraft (Offline)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
-            }  
+            }
         ],
         'Tools': [
             { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
@@ -247,10 +218,6 @@ document.body.appendChild(menu);
     .then(scriptText => eval(scriptText))  
  },
           { text: 'Fps Viewer', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))  
- },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -300,14 +267,6 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Blooket Bot', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))
- },
           { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -338,7 +297,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
-          { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
+    { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
