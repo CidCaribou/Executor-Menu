@@ -123,7 +123,23 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
+ },
+          { text: 'Clear Local Storage', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -131,7 +147,19 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
+          { text: 'Matrix', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
+ },
+          { text: 'Clear Cookies', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Glitch Images', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -180,7 +208,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/kahoot-botter.js')
+          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -264,6 +292,22 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Clear Local Storage', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Clear Cookies', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Fps Viewer', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -318,7 +362,11 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/kahoot-botter.js')
+          { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
+ },
+          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -356,10 +404,18 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'Matrix', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))
+ },
           { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'Glitch Images', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Snow', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
