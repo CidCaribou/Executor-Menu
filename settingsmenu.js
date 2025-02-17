@@ -1,3 +1,4 @@
+// This is not finished and is not currently updated to the most recent version 2/17/25
 settingsButton.addEventListener('click', () => {
     sidebar.style.display = 'none';
     content.innerHTML = '';
