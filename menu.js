@@ -232,7 +232,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
+          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -402,7 +402,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Botter/KahootBotter.js')
+          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
