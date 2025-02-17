@@ -131,10 +131,18 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/Wordle/Wordle.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
           { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/TimeShooter2.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
           { text: 'Color Picker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -190,7 +198,7 @@ document.body.appendChild(menu);
     .then(scriptText => eval(scriptText))   
             },
           
-          { text: 'Gimkit Hacks', action: () => fetch('https://raw.githubusercontent.com/CidCaribou/Executor-Scripts/refs/heads/main/Gimkit%20Hacks/Gimkit.js')
+          { text: 'Gimkit Hacks', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -278,7 +286,15 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
+          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/Wordle/Wordle.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
           { text: 'WebGL-Fluid-Simulation', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
+          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/TimeShooter2.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
