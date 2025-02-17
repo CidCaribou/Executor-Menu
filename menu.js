@@ -127,11 +127,19 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Old School', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
           { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/Wordle/Wordle.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+            },
+          { text: 'Earthquake', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
@@ -435,6 +443,14 @@ document.body.appendChild(menu);
           { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
+            },
+          { text: 'Old School', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
+          { text: 'Earthquake', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
             },
           { text: 'Glitch Images', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js')
     .then(response => response.text())  
