@@ -143,6 +143,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
             },
+          { text: 'Star Wars Intro', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -444,6 +448,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'Star Wars Intro', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Old School', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
