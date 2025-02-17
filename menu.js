@@ -135,6 +135,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: 'Color Picker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
           { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
@@ -297,6 +301,10 @@ document.body.appendChild(menu);
     .then(scriptText => eval(scriptText))  
  },
           { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))  
+ },
+          { text: 'Color Picker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
