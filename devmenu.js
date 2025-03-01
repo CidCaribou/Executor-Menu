@@ -25,7 +25,7 @@ menu.style.cssText = `
   color: #333;
   border: 1px solid #ccc;
   border-radius: 12px;
-  z-index: 10000;
+  z-index: 99999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
   user-select: none;
@@ -171,7 +171,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/optomized.js')
+          { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
@@ -398,7 +398,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
 },
-            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Revamped_Menu/optomized.js')
+            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
