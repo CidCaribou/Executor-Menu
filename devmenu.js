@@ -183,7 +183,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
+          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
@@ -352,7 +352,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Custom%20Cursors/script.js')
+          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
