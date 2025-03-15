@@ -123,6 +123,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/mc-exploit.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Inspect (Toggle)', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -332,6 +336,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
+          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/mc-exploit.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
@@ -703,13 +711,23 @@ const showToast = (message, icon) => {
     }, { once: true }); 
 });
   
-  maximizeButton.addEventListener('click', () => {
+maximizeButton.addEventListener('click', () => {
+ // Started Develoupment For Fullscreen
+  //if (document.fullscreenElement) {
+    //document.exitFullscreen();
+      //sidebar.style.width = '140px';
+  //} else {
+    //menu.requestFullscreen();
+      //sidebar.style.width = '540px';
+  //}
+
   Swal.fire({
-  title: "Fullscreen Not Finished",
-  text: "I have not and will probibly not add fullscreen becasue you can already tell it would look wheird",
-  icon: "error"
-});
+    title: "Fullscreen Not Finished",
+    text: "Started Develoupment For Fullscreen",
+    icon: "error"
   });
+});
+
 
 
     let isMinimized = false;
