@@ -123,7 +123,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
-          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-mc-exploit.js')
+          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-anniversary-mc-exploit.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -360,7 +360,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-mc-exploit.js')
+          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-anniversary-mc-exploit.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
