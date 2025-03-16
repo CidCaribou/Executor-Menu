@@ -648,26 +648,33 @@ Swal.fire({
     });
 
      button.addEventListener('click', () => {
-    showToast('Loading...', 'warning');
-    action()
-      .then(() => {
-        showToast('Script loaded successfully', 'success');
-      })
-      .catch(() => {
-        showToast('Failed to load script', 'error'); 
-      });
-  });
+  showToast('Loading...', 'warning');
+
+  action()
+    .then(() => {
+      showToast('Script loaded successfully', 'success'); 
+    })
+    .catch(() => {
+      showToast('Failed to load script', 'error');
+    });
+});
 
 const showToast = (message, icon) => {
-  Swal.fire({
+  const swalInstance = Swal.fire({
     toast: true,
     position: 'bottom',
     icon: icon,
     title: message,
     showConfirmButton: false,
-    timer: 3000,
+    timer: 3000, 
     timerProgressBar: true,
+    willClose: () => Swal.stopTimer() 
   });
+
+  //tags ignore #update #Multiple at once #Loading #swal
+    if (icon === 'success') {
+    swalInstance.close(); 
+  }
 };
 
         return button;
