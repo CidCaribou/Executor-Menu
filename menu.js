@@ -123,10 +123,6 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
-          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-anniversary-mc-exploit.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))   
-            },
           { text: 'Clear Cache', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
@@ -360,10 +356,6 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-          { text: '15th anniversary Cape Exploit (TEMP)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/15th-anniversary-mc-exploit.js')
-    .then(response => response.text())  
-    .then(scriptText => eval(scriptText))   
-            },
           { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
