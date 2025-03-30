@@ -658,11 +658,6 @@ const showToast = (message, icon) => {
     timerProgressBar: true,
     willClose: () => Swal.stopTimer() 
   });
-
-  //tags ignore #update #Multiple at once #Loading #swal
-    if (icon === 'success') {
-    swalInstance.close(); 
-  }
 };
 
         return button;
