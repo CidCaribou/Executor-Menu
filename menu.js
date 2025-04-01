@@ -123,7 +123,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
-          { text: 'Clear IndexDB', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js')
+          { text: 'Clear IndexDB', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
@@ -276,7 +276,7 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))  
  },
-             { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js')
+             { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
            },
@@ -414,7 +414,7 @@ document.body.appendChild(menu);
             }
         ],
         'Game Cheats': [
-            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js')
+            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
 },
