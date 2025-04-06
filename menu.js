@@ -119,6 +119,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Clear Cache', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
@@ -336,6 +340,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Clear IndexDB', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
@@ -422,6 +430,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
  },
+          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
