@@ -119,6 +119,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
             },
+          { text: 'Wordle Unlimited Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
           { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))   
@@ -426,6 +430,10 @@ document.body.appendChild(menu);
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
 },
+          { text: 'Wordle Unlimited Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js')
+    .then(response => response.text())  
+    .then(scriptText => eval(scriptText))   
+            },
             { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
     .then(response => response.text())  
     .then(scriptText => eval(scriptText))
