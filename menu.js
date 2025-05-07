@@ -706,6 +706,39 @@
         header.style.cursor = 'grab';
     });
 
+    header.addEventListener('touchstart', (e) => {
+        if (
+            e.target === searchInput ||
+            e.target === maximizeButton ||
+            e.target === minimizeButton ||
+            e.target === closeButton
+        ) {
+            return;
+        }
+        isDragging = true;
+        const touch = e.touches[0];
+        offsetX = touch.clientX - menu.offsetLeft;
+        offsetY = touch.clientY - menu.offsetTop;
+        e.preventDefault();
+    });
+
+    document.addEventListener('touchmove', (e) => {
+        if (isDragging) {
+            const touch = e.touches[0];
+            menu.style.left = touch.clientX - offsetX + 'px';
+            menu.style.top = touch.clientY - offsetY + 'px';
+            e.preventDefault(); 
+        }
+    });
+
+    document.addEventListener('touchend', () => {
+        isDragging = false;
+    });
+
+    document.addEventListener('touchcancel', () => {
+        isDragging = false;
+    });
+
     closeButton.addEventListener('click', () => {
         menu.style.transition = 'opacity 0.2s ease-out';
         menu.style.opacity = '0';
