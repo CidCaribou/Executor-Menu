@@ -121,6 +121,10 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
+          { text: 'DOMI', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
           { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
@@ -510,6 +514,10 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
+          { text: 'DOMI', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
           { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
