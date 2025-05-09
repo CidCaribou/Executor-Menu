@@ -153,7 +153,19 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/Wordle/Wordle.js')
+          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'Slope', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'DragonX V2 International', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'Flappy Bird', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
@@ -169,7 +181,7 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/TimeShooter2.js')
+          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
@@ -316,7 +328,19 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
-          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/Wordle/Wordle.js')
+          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'Slope', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'DragonX V2 International', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js')
+    .then(response => response.text())
+    .then(scriptText => eval(scriptText))
+            },
+          { text: 'Flappy Bird', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
@@ -324,7 +348,7 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
-          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games/TimeShooter2.js')
+          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
