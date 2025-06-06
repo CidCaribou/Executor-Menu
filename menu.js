@@ -201,7 +201,7 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
-          { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
+          { text: 'Prodigy Cheats (Outdated)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
@@ -460,7 +460,7 @@
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
             },
-            { text: 'Prodigy Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
+            { text: 'Prodigy Cheats (Outdated)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
     .then(response => response.text())
     .then(scriptText => eval(scriptText))
  },
