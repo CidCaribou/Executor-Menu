@@ -635,7 +635,8 @@
 
             script.onerror = () => {
                 script.remove();
-                reject(new Error(`Failed to load script: ${url}`));
+                const errorMsg = event.message || event.type || 'Unknown script loading error';
+                reject(new Error(`Failed to load script: ${errorMsg}`));
             };
 
             document.head.appendChild(script);
@@ -679,7 +680,8 @@
                     showToast('Script loaded successfully', 'success');
                 })
                 .catch(() => {
-                    showToast('Failed to load script', 'error');
+                    showToast('Failed to load script. Check console for details.', 'error');
+                    console.log(`Failed to load script: ${error.message}`)
                 });
         })
 
