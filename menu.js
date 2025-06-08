@@ -28,7 +28,7 @@
       opacity: 0; `;
 
     setTimeout(() => {
-      menu.style.opacity = '1';
+        menu.style.opacity = '1';
     }, 10);
 
     document.body.appendChild(menu);
@@ -108,443 +108,437 @@
 
     const sidebarButtons = ['All', 'Games', 'Tools', 'Game Cheats', 'Fun', 'Settings'];
     const buttonGroups = {
-        'All': [
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+        'All': [{
+                text: 'Dark&Light Mode',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
             },
-            { text: 'Draw On website', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Session Storage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
-          { text: 'Wordle Unlimited Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Draw On website',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js'
             },
-          { text: 'DOMI', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Wordle Unlimited Hack',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
             },
-          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'DOMI',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js'
             },
-          { text: 'Clear Cache', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'wasm-patcher',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js'
             },
-          { text: 'Clear IndexDB', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Cache',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js'
             },
-          { text: 'Clear Session Storage', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear IndexDB',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js'
             },
-          { text: 'Inspect (Toggle)', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Old School', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Session Storage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
-          { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Inspect (Toggle)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js'
             },
-          { text: 'Slope', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Auto Scroll',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js'
             },
-          { text: 'DragonX V2 International', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Old School',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js'
             },
-          { text: 'Flappy Bird', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Browser',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js'
             },
-          { text: 'Earthquake', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Wordle+',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js'
             },
-          { text: 'Star Wars Intro', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Slope',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js'
             },
-          { text: 'Color Picker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Clear Local Storage', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Prodigy Cheats (Outdated)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Matrix', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Clear Cookies', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Glitch Images', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'WebGL-Fluid-Simulation', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'DragonX V2 International',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js'
             },
-            { text: 'Auto Clicker V2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Flappy Bird',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js'
             },
-          { text: '2048', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Earthquake',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js'
             },
-
-          { text: 'MineCraft (Offline)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Star Wars Intro',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js'
             },
-
-           { text: 'Snow', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Google Translate Page',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js'
             },
-
-          { text: 'Gimkit Hacks', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Time Shooter 2',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js'
             },
-
-            { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Color Picker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js'
             },
-
-          { text: 'Kahoot Hacks', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Hacks/KahootHacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'History Flooder', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Ego-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/ego-client.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Dev Console', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Blooket Bot', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Car-Axle-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/car-axle-client.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Wordle Hack',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js'
             },
-          { text: 'Fps Viewer', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Dictionary', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Ad Blocker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-             { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
-           },
-            { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
-  },
-          { text: 'Chrome Dino Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: '3D Webpage', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/3Dpage.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
-  },
-            { text: 'Snake X More Menu Mod', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Local Storage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js'
             },
-          { text: 'Duolingo Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Duolingo%20Mod%20Menu/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Prodigy Cheats (Outdated)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js'
+            },
+            {
+                text: 'Matrix',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js'
+            },
+            {
+                text: 'Clear Cookies',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js'
+            },
+            {
+                text: 'Custom Cursors',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js'
+            },
+            {
+                text: 'Glitch Images',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js'
+            },
+            {
+                text: 'WebGL-Fluid-Simulation',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js'
+            },
+            {
+                text: 'Auto Clicker V2',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js'
+            },
+            {
+                text: '2048',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js'
+            },
+            {
+                text: 'MineCraft (Offline)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js'
+            },
+            {
+                text: 'Snow',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js'
+            },
+            {
+                text: 'Gimkit Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js'
+            },
+            {
+                text: 'Cloaker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
+            },
+            {
+                text: 'Kahoot Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Hacks/KahootHacks.js'
+            },
+            {
+                text: 'History Flooder',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js'
+            },
+            {
+                text: 'Ego-Client',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/ego-client.js'
+            },
+            {
+                text: 'Kahoot Botter',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js'
+            },
+            {
+                text: 'Dev Console',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js'
+            },
+            {
+                text: 'Blooket Bot',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js'
+            },
+            {
+                text: 'Car-Axle-Client',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/car-axle-client.js'
+            },
+            {
+                text: 'MineCraft Overlay',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js'
+            },
+            {
+                text: 'Fps Viewer',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js'
+            },
+            {
+                text: 'Dictionary',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js'
+            },
+            {
+                text: 'Ad Blocker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js'
+            },
+            {
+                text: 'Blooket Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Cookie Clicker Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js'
+            },
+            {
+                text: 'Chrome Dino Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks/menu.js'
+            },
+            {
+                text: '3D Webpage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/3Dpage.js'
+            },
+            {
+                text: 'Snake X More Menu Mod',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js'
+            },
+            {
+                text: 'Duolingo Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Duolingo%20Mod%20Menu/menu.js'
             }
         ],
-        'Games': [
-            { text: 'Snake X More Menu Mod', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+        'Games': [{
+                text: 'Snake X More Menu Mod',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js'
             },
-          { text: '2048', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: '2048',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/2048/mainfile.js'
             },
-          { text: 'Wordle+', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Wordle+',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Wordle+/mainfile.js'
             },
-          { text: 'Slope', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Slope',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Slope/menu.js'
             },
-          { text: 'DragonX V2 International', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'DragonX V2 International',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/MineCraft-DragonX-V2/mainfile.js'
             },
-          { text: 'Flappy Bird', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Flappy Bird',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Games%20/Flappy%20Bird/menu.js'
             },
-          { text: 'WebGL-Fluid-Simulation', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'WebGL-Fluid-Simulation',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/Games%20/WebGL-Fluid-Simulation/mainfile.js'
             },
-          { text: 'Time Shooter 2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Time Shooter 2',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/TimeShooter-2/mainfile.js'
             },
-          { text: 'MineCraft (Offline)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'MineCraft (Offline)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Games%20/MineCraft_(Offline)/MineCraft_(Offline).js'
             }
         ],
-        'Tools': [
-            { text: 'Cloaker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Clear Cache', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+        'Tools': [{
+                text: 'Cloaker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
             },
-          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Cache',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js'
             },
-          { text: 'Clear IndexDB', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'wasm-patcher',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js'
             },
-           { text: 'Clear Session Storage', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear IndexDB',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js'
             },
-          { text: 'Browser', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Google Translate Page', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Auto Scroll', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Color Picker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Clear Local Storage', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Clear Cookies', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Fps Viewer', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Custom Cursors', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Inspect (Toggle)', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Ego-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/ego-client.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Car-Axle-Client', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/car-axle-client.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'History Flooder', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Dictionary', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Ad Blocker', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Dev Console', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-            { text: 'Dark&Light Mode', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Clear Session Storage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
-          { text: 'Auto Clicker V2', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Browser',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Browser-In-Browser.js'
+            },
+            {
+                text: 'Google Translate Page',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/translate-page.js'
+            },
+            {
+                text: 'Auto Scroll',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js'
+            },
+            {
+                text: 'Color Picker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js'
+            },
+            {
+                text: 'Clear Local Storage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js'
+            },
+            {
+                text: 'Clear Cookies',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js'
+            },
+            {
+                text: 'Fps Viewer',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/fps-viewer(Needs-Update).js'
+            },
+            {
+                text: 'Custom Cursors',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Custom%20Cursors/script.js'
+            },
+            {
+                text: 'Inspect (Toggle)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js'
+            },
+            {
+                text: 'Ego-Client',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/ego-client.js'
+            },
+            {
+                text: 'Car-Axle-Client',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/car-axle-client.js'
+            },
+            {
+                text: 'History Flooder',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/HistoryFlooder.js'
+            },
+            {
+                text: 'Dictionary',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/dictionary.js'
+            },
+            {
+                text: 'Ad Blocker',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/adblocker.js'
+            },
+            {
+                text: 'Dev Console',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/DevConsole.js'
+            },
+            {
+                text: 'Dark&Light Mode',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+            },
+            {
+                text: 'Auto Clicker V2',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/autoclicker.js'
             }
         ],
-        'Game Cheats': [
-            { text: 'Blooket Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
-},
-          { text: 'Wordle Unlimited Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+        'Game Cheats': [{
+                text: 'Blooket Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
             },
-            { text: 'Prodigy Cheats (Outdated)', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'wasm-patcher', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Wordle Unlimited Hack',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
             },
-          { text: 'Wordle Hack', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Kahoot Botter', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Blooket Bot', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Cookie Clicker Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Kahoot Hacks', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Hacks/KahootHacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Gimkit Hacks', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Prodigy Cheats (Outdated)',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js'
             },
-          { text: 'Chrome Dino Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Duolingo Cheats', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Duolingo%20Mod%20Menu/menu.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Snake X More Menu Mod', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- }
+            {
+                text: 'wasm-patcher',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js'
+            },
+            {
+                text: 'Wordle Hack',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js'
+            },
+            {
+                text: 'Kahoot Botter',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-botter.js'
+            },
+            {
+                text: 'Blooket Bot',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/blooketbot.js'
+            },
+            {
+                text: 'Cookie Clicker Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Cookie%20Clicker%20Hacks/mainmenu.js'
+            },
+            {
+                text: 'Kahoot Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Kahoot%20Hacks/KahootHacks.js'
+            },
+            {
+                text: 'Gimkit Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js'
+            },
+            {
+                text: 'Chrome Dino Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
+            },
+            {
+                text: 'Duolingo Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Duolingo%20Mod%20Menu/menu.js'
+            },
+            {
+                text: 'Snake X More Menu Mod',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Google_SnakeXMore_Menu_Mod.js'
+            }
         ],
-        'Fun': [
-            { text: 'Draw On website', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+        'Fun': [{
+                text: 'Draw On website',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js'
             },
-          { text: 'Matrix', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'DOMI', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Matrix',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js'
             },
-          { text: 'MineCraft Overlay', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'DOMI',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/DOMI.js'
             },
-          { text: 'Star Wars Intro', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Old School', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'MineCraft Overlay',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/MineCraftOverlay.js'
             },
-          { text: 'Earthquake', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Star Wars Intro',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Star-Wars-Intro.js'
             },
-          { text: 'Glitch Images', action: () =>fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
- },
-          { text: 'Snow', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Old School',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Old-School.js'
             },
-            { text: '3D Webpage', action: () => fetch('https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/3Dpage.js')
-    .then(response => response.text())
-    .then(scriptText => eval(scriptText))
+            {
+                text: 'Earthquake',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/earthquake.js'
+            },
+            {
+                text: 'Glitch Images',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/glitch_image.js'
+            },
+            {
+                text: 'Snow',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/snow.js'
+            },
+            {
+                text: '3D Webpage',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/3Dpage.js'
             }
         ],
         'Settings': []
@@ -561,8 +555,8 @@
     function displayButtons(groupName) {
         content.innerHTML = '';
         const buttonsToDisplay = buttonGroups[groupName];
-        buttonsToDisplay.forEach(({ text, action }) => {
-            const button = createButtonElement(text, action);
+        buttonsToDisplay.forEach((item) => {
+            const button = createButtonElement(item.text, item.url);
             content.appendChild(button);
         });
     }
@@ -628,7 +622,27 @@
         return button;
     }
 
-    function createButtonElement(btnText, action) {
+    function executeScript(url) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = url;
+            script.async = true;
+
+            script.onload = () => {
+                script.remove();
+                resolve();
+            };
+
+            script.onerror = () => {
+                script.remove();
+                reject(new Error(`Failed to load script: ${url}`));
+            };
+
+            document.head.appendChild(script);
+        });
+    }
+
+    function createButtonElement(btnText, url) {
         const button = document.createElement('button');
         button.innerText = btnText;
         button.style.display = 'block';
@@ -660,14 +674,14 @@
         button.addEventListener('click', () => {
             showToast('Loading...', 'warning');
 
-            action()
+            executeScript(url)
                 .then(() => {
                     showToast('Script loaded successfully', 'success');
                 })
                 .catch(() => {
                     showToast('Failed to load script', 'error');
                 });
-        });
+        })
 
         const showToast = (message, icon) => {
             const swalInstance = Swal.fire({
@@ -699,17 +713,20 @@
         const query = searchInput.value.toLowerCase();
         content.innerHTML = '';
         const allButtons = buttonGroups['All'];
-        const filteredButtons = allButtons.filter(({ text }) =>
+        const filteredButtons = allButtons.filter(({
+                text
+            }) =>
             text.toLowerCase().includes(query)
         );
-        filteredButtons.forEach(({ text, action }) => {
-            const button = createButtonElement(text, action);
+        filteredButtons.forEach((item) => {
+            const button = createButtonElement(item.text, item.url);
             content.appendChild(button);
         });
     });
 
     let isDragging = false;
-    let offsetX = 0, offsetY = 0;
+    let offsetX = 0,
+        offsetY = 0;
 
     header.addEventListener('mousedown', (e) => {
         if (
@@ -759,7 +776,7 @@
             const touch = e.touches[0];
             menu.style.left = touch.clientX - offsetX + 'px';
             menu.style.top = touch.clientY - offsetY + 'px';
-            e.preventDefault(); 
+            e.preventDefault();
         }
     });
 
@@ -777,7 +794,9 @@
 
         menu.addEventListener('transitionend', () => {
             menu.remove();
-        }, { once: true });
+        }, {
+            once: true
+        });
     });
 
     maximizeButton.addEventListener('click', () => {
