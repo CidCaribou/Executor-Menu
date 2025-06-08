@@ -306,7 +306,7 @@
             },
             {
                 text: 'Chrome Dino Cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks/menu.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
             },
             {
                 text: '3D Webpage',
