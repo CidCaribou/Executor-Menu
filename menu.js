@@ -118,7 +118,7 @@
             },
             {
                 text: 'X-Ray',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/x-ray-goggles-mouse.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/x-ray.js'
             },
             {
                 text: 'Draw On website',
@@ -372,7 +372,7 @@
             },
             {
                 text: 'X-Ray',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/x-ray-goggles-mouse.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/x-ray.js'
             },
             {
                 text: 'wasm-patcher',
