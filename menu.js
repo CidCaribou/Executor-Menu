@@ -117,6 +117,10 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
+                text: 'X-Ray',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+            },
+            {
                 text: 'Draw On website',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js'
             },
@@ -365,6 +369,10 @@
             {
                 text: 'Clear Cache',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js'
+            },
+            {
+                text: 'X-Ray',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
                 text: 'wasm-patcher',
