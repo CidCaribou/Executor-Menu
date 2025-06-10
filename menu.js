@@ -209,8 +209,8 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js'
             },
             {
-                text: 'Prodigy Cheats (Outdated)',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js'
+                text: 'Prodigy Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/pxi-fusion.js'
             },
             {
                 text: 'Matrix',
@@ -464,8 +464,8 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
             },
             {
-                text: 'Prodigy Cheats (Outdated)',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Revamped_Menu/optomized.js'
+                text: 'Prodigy Cheats',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/pxi-fusion.js'
             },
             {
                 text: 'wasm-patcher',
