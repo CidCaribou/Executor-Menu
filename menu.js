@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V1.9';
+    const ExecutorVersion = 'V2.0.0';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
