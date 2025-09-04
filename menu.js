@@ -210,7 +210,7 @@
             },
             {
                 text: 'Prodigy Cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/pxi-fusion.js'
+                url: 'https://pxi-fusion-menu.pages.dev/beta/main.js'
             },
             {
                 text: 'Matrix',
@@ -465,7 +465,7 @@
             },
             {
                 text: 'Prodigy Cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/pxi-fusion.js'
+                url: 'https://pxi-fusion-menu.pages.dev/beta/main.js'
             },
             {
                 text: 'wasm-patcher',
