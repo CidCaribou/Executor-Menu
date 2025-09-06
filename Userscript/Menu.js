@@ -17,6 +17,8 @@
 
 "use strict";
 
+//To activate this script, click the bookmarklet from https://executor-official.netlify.app/install, or go into your dev console and enter ExecutorUserScriptVersion().
+
 function launchExecutor() {
     if (document.getElementById('executor-menu')) return;
 
