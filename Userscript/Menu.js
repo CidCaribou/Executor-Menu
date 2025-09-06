@@ -17,16 +17,33 @@
 
 "use strict";
 
-//To activate this script, click the bookmarklet from https://executor-official.netlify.app/install, or go into your dev console and enter ExecutorUserScriptVersion().
+ if (window.location.href.endsWith("?executor")) {
+        launchExecutor();
+    }
 
 function launchExecutor() {
     if (document.getElementById('executor-menu')) return;
 
+
     const ExecutorVersion = 'V2.0.0';
 
-    const swalScript = document.createElement('script');
-    swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
-    document.head.appendChild(swalScript);
+    (async () => {
+    try {
+        const res = await new Promise((resolve, reject) => {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: 'https://cdn.jsdelivr.net/npm/sweetalert2@11',
+                onload: (r) => resolve(r),
+                onerror: reject
+            });
+        });
+        injectScriptToPage(res.responseText);
+        console.log("Swal loaded");
+    } catch (e) {
+        console.error("Failed to load Swal:", e);
+    }
+})();
+
 
     const menu = document.createElement('div');
     menu.id = 'executor-menu';
@@ -651,26 +668,32 @@ function launchExecutor() {
         return button;
     }
 
-    function executeScript(url) {
-        return new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            script.src = url;
-            script.async = true;
+    function injectScriptToPage(code) {
+    const s = document.createElement('script');
+    s.textContent = code;
+    document.body.appendChild(s);
+    s.remove();
+}
 
-            script.onload = () => {
-                script.remove();
-                resolve();
-            };
-
-            script.onerror = () => {
-                script.remove();
-                const errorMsg = event.message || event.type || 'Unknown script loading error';
-                reject(new Error(`Failed to load script: ${errorMsg}`));
-            };
-
-            document.head.appendChild(script);
+function executeScript(url) {
+    return new Promise((resolve, reject) => {
+        GM_xmlhttpRequest({
+            method: 'GET',
+            url,
+            onload: (res) => {
+                try {
+                    // Inject directly into page context so hacks work
+                    injectScriptToPage(res.responseText);
+                    resolve();
+                } catch (e) {
+                    reject(e);
+                }
+            },
+            onerror: reject
         });
-    }
+    });
+}
+
 
     function createButtonElement(btnText, url) {
         const button = document.createElement('button');
