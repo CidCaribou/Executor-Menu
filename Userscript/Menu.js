@@ -15,6 +15,9 @@
 // ==/UserScript==
 
 (function() {
+    "use strict";
+
+(function() {
     if (document.getElementById('executor-menu')) return;
 
     const ExecutorVersion = 'V2.0.0';
@@ -853,4 +856,11 @@
         }
         isMinimized = !isMinimized;
     });
+
+    window.ExecutorMenu = {
+        init: function() {
+            const menuEl = document.getElementById('executor-menu');
+            if(menuEl) menuEl.style.display = 'block';
+        }
+    };
 })();
