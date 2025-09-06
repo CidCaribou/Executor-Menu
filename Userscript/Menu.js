@@ -17,9 +17,10 @@
 (function() {
     "use strict";
 
-(function() {
-    if (document.getElementById('executor-menu')) return;
-
+window.ExecutorMenu = {
+    init: function() {
+        if (document.getElementById('executor-menu')) return;
+        
     const ExecutorVersion = 'V2.0.0';
 
     const swalScript = document.createElement('script');
@@ -856,11 +857,4 @@
         }
         isMinimized = !isMinimized;
     });
-
-    window.ExecutorMenu = {
-        init: function() {
-            const menuEl = document.getElementById('executor-menu');
-            if(menuEl) menuEl.style.display = 'block';
-        }
-    };
 })();
