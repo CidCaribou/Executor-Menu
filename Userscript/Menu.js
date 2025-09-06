@@ -5,21 +5,21 @@
 // @description  Easy script launcher with categories, search, and quick access.
 // @author       Wasd
 // @match        *://*/*
-// @icon         https://cdn.discordapp.com/attachments/1392865179640922172/1392865279024828506/image.png?ex=68bc3be0&is=68baea60&hm=fa54271abe1608da93d03c6504d6e23ba2a2c7b888158388cbcb06e3bab37415&
+// @icon         https://cdn.discordapp.com/attachments/1392865179640922172/1392865279024828506/image.png?ex=68bc3be0&is=68baea60&hm=fa54271abe1608da93d03c6504d6e23ba2a2c7b888158388cbcb06e3bab37415
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
+// @grant        unsafeWindow
 // @updateURL    https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.js
 // @downloadURL  https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.js
 // ==/UserScript==
 
-    "use strict";
+"use strict";
 
-window.ExecutorMenu = {
-    init: function() {
-        if (document.getElementById('executor-menu')) return;
-        
+function launchExecutor() {
+    if (document.getElementById('executor-menu')) return;
+
     const ExecutorVersion = 'V2.0.0';
 
     const swalScript = document.createElement('script');
@@ -856,4 +856,5 @@ window.ExecutorMenu = {
         }
         isMinimized = !isMinimized;
     });
-})();
+}
+unsafeWindow.ExecutorUserScriptVersion = launchExecutor;
