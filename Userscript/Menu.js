@@ -14,7 +14,6 @@
 // @downloadURL  https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.js
 // ==/UserScript==
 
-(function() {
     "use strict";
 
 window.ExecutorMenu = {
