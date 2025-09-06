@@ -10,8 +10,8 @@
 // @grant        GM_getValue
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
-// @updateURL    https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js
-// @downloadURL  https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js
+// @updateURL    https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.js
 // ==/UserScript==
 
 (function() {
