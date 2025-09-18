@@ -963,10 +963,15 @@ winBtn.close:hover {
         ]
     };
 
-    function renderScripts(category) {
+    function renderScripts(category, filter = '') {
         const list = wrap.querySelector('.scripts');
         list.innerHTML = '';
+
         (Scripts[category] || []).forEach(s => {
+            if (filter && !s.text.toLowerCase().includes(filter.toLowerCase()) && !s.description?.toLowerCase().includes(filter.toLowerCase())) {
+                return; // skip scripts that don't match search
+            }
+
             const row = document.createElement('div');
             row.className = 'script';
             row.innerHTML = `
@@ -974,10 +979,9 @@ winBtn.close:hover {
         <h3 class="scriptTitle">${escapeHtml(s.text)}</h3>
         <p class="scriptsSub">${escapeHtml(s.description||'')}</p>
       </div>
-<div class="check">
-  <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3430-thumb.png" alt="Execute Script" width="100%" height="100%">
-</div>
-
+      <div class="check">
+        <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3430-thumb.png" alt="Execute Script" width="100%" height="100%">
+      </div>
     `;
             const check = row.querySelector('.check');
             row.addEventListener('click', () => {
@@ -990,6 +994,7 @@ winBtn.close:hover {
     const defaultCategory = 'Home';
     renderScripts(defaultCategory);
 
+
     function escapeHtml(s) {
         return String(s).replace(/[&<>"']/g, function(m) {
             return ({
@@ -1001,6 +1006,15 @@ winBtn.close:hover {
             })[m] || m;
         });
     }
+
+    const searchInput = wrap.querySelector('.input');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.trim();
+        const selectedCategory = wrap.querySelector('.navItem.selected .label').textContent;
+        renderScripts(selectedCategory, filter);
+    });
+
 
     function executeScript(url, check) {
         if (!check) return;
