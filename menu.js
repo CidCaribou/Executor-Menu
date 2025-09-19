@@ -257,7 +257,7 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Gimkit%20Hacks/Gimkit.js'
             },
             {
-                text: 'Cloaker',
+                text: 'Tab Cloaker',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
             },
             {
@@ -367,7 +367,7 @@
             }
         ],
         'Tools': [{
-                text: 'Cloaker',
+                text: 'Tab Cloaker',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
             },
             {
