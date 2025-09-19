@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.0';
+    const ExecutorVersion = 'V2.1.3';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -420,6 +420,11 @@ winBtn.close:hover {
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+            },    
+            {
+                text: 'Rain Emojis',
+                description: 'Make the page rain emojis',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
             {
                 text: 'Kahoot Name Bypass',
@@ -924,6 +929,11 @@ winBtn.close:hover {
                 text: 'Draw On website',
                 description: 'Draw freely on any webpage',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js'
+            },
+            {
+                text: 'Rain Emojis',
+                description: 'Make the page rain emojis',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
             {
                 text: 'Matrix',
