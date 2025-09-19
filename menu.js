@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.0.0';
+    const ExecutorVersion = 'V2.0.3';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -115,6 +115,10 @@
             {
                 text: 'Clear Session Storage',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+            },
+            {
+                text: 'Rain Emojis',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
             {
                 text: 'Kahoot Name Bypass',
@@ -519,6 +523,10 @@
         'Fun': [{
                 text: 'Draw On website',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/drawonwebsite.js'
+            },          
+            {
+                text: 'Rain Emojis',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
             {
                 text: 'Matrix',
