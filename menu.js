@@ -117,6 +117,10 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
+                text: 'Flappy Bird Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
+            {
                 text: 'Rain Emojis',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
@@ -470,6 +474,10 @@
             {
                 text: 'Wordle Unlimited Hack',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
+            },
+            {
+                text: 'Flappy Bird Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
             },
             {
                 text: 'Prodigy Cheats',
