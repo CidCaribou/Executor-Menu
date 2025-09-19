@@ -422,6 +422,11 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
             },
             {
+                text: 'Kahoot Name Bypass',
+                description: 'Bypass nickname restrictions kahoot',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
+            },
+            {
                 text: 'Clear Session Storage',
                 description: 'Clears session storage data for the current site',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
@@ -853,6 +858,11 @@ winBtn.close:hover {
                 text: 'Wordle Unlimited Hack',
                 description: 'Reveal Answer for Wordle Unlimited',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
+            },
+            {
+                text: 'Kahoot Name Bypass',
+                description: 'Bypass nickname restrictions kahoot',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
             },
             {
                 text: 'Prodigy Cheats',
