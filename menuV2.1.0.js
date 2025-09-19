@@ -420,7 +420,12 @@ winBtn.close:hover {
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
-            },    
+            },
+            {
+                text: 'Flappy Bird Hacks',
+                description: 'Hacks for Flappy Bird',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
             {
                 text: 'Rain Emojis',
                 description: 'Make the page rain emojis',
@@ -858,6 +863,11 @@ winBtn.close:hover {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Flappy Bird Hacks',
+                description: 'Hacks for Flappy Bird',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
             },
             {
                 text: 'Wordle Unlimited Hack',
