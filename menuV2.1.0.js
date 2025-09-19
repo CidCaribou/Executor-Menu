@@ -734,7 +734,7 @@ winBtn.close:hover {
             }
         ],
         'Tools': [{
-                text: 'Cloaker',
+                text: 'Tab Cloaker',
                 description: 'Disguise tab',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
             },
