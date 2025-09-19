@@ -117,6 +117,10 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
+                text: 'Kahoot Name Bypass',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
+            },
+            {
                 text: 'X-Ray',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/x-ray.js'
             },
@@ -466,6 +470,10 @@
             {
                 text: 'Prodigy Cheats',
                 url: 'https://pxi-fusion-menu.pages.dev/beta/main.js'
+            },
+            {
+                text: 'Kahoot Name Bypass',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
             },
             {
                 text: 'wasm-patcher',
