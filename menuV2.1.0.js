@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.3';
+    const ExecutorVersion = 'V2.1.5';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -420,6 +420,11 @@ winBtn.close:hover {
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+            },
+            {
+                text: 'ev.io hacks',
+                description: 'Hacks for the Shooter Game ev.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
             },
             {
                 text: 'Flappy Bird Hacks',
@@ -873,6 +878,11 @@ winBtn.close:hover {
                 text: 'Wordle Unlimited Hack',
                 description: 'Reveal Answer for Wordle Unlimited',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-unlimited-hack.js'
+            },
+            {
+                text: 'ev.io hacks',
+                description: 'Hacks for the Shooter Game ev.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
             },
             {
                 text: 'Kahoot Name Bypass',
