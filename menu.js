@@ -117,6 +117,10 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
+                text: 'Bloxd.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+            },
+            {
                 text: 'Flappy Bird Hacks',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
             },
@@ -482,6 +486,10 @@
             {
                 text: 'Flappy Bird Hacks',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
+            {
+                text: 'Bloxd.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
             },
             {
                 text: 'ev.io hacks',
