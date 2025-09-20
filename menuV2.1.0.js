@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.5';
+    const ExecutorVersion = 'V2.1.6';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
