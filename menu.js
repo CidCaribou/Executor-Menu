@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.0.3';
+    const ExecutorVersion = 'V2.0.5';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -119,6 +119,10 @@
             {
                 text: 'Flappy Bird Hacks',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
+            {
+                text: 'ev.io hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
             },
             {
                 text: 'Rain Emojis',
@@ -478,6 +482,10 @@
             {
                 text: 'Flappy Bird Hacks',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
+            {
+                text: 'ev.io hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
             },
             {
                 text: 'Prodigy Cheats',
