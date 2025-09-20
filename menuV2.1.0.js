@@ -427,6 +427,11 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
             },
             {
+                text: 'Bloxd.io Hacks',
+                description: 'Spectra Hacked Client for Bloxd.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+            },
+            {
                 text: 'Flappy Bird Hacks',
                 description: 'Hacks for Flappy Bird',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
@@ -873,6 +878,11 @@ winBtn.close:hover {
                 text: 'Flappy Bird Hacks',
                 description: 'Hacks for Flappy Bird',
                 url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-flappyBird.js'
+            },
+            {
+                text: 'Bloxd.io Hacks',
+                description: 'Spectra Hacked Client for Bloxd.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
             },
             {
                 text: 'Wordle Unlimited Hack',
