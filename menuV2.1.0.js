@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.6';
+    const ExecutorVersion = 'V2.1.7';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -420,6 +420,11 @@ winBtn.close:hover {
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+            },
+            {
+                text: 'Slope Hacks',
+                description: 'Hacks For Slope',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-Slope.js'
             },
             {
                 text: 'ev.io hacks',
@@ -873,6 +878,11 @@ winBtn.close:hover {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Slope Hacks',
+                description: 'Hacks For Slope',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-Slope.js'
             },
             {
                 text: 'Flappy Bird Hacks',
