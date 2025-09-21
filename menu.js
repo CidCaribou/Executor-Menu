@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.0.6';
+    const ExecutorVersion = 'V2.0.7';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -115,6 +115,10 @@
             {
                 text: 'Clear Session Storage',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+            },
+            {
+                text: 'Slope Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-Slope.js'
             },
             {
                 text: 'Bloxd.io Hacks',
@@ -478,6 +482,10 @@
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Slope Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/dano36860/-s@main/Whisp-Slope.js'
             },
             {
                 text: 'Wordle Unlimited Hack',
