@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.0.7';
+    const ExecutorVersion = 'V2.0.8';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -115,6 +115,10 @@
             {
                 text: 'Clear Session Storage',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+            },
+            {
+                text: 'Kirka.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kirka.io-hacks/hack.js'
             },
             {
                 text: 'Slope Hacks',
@@ -482,6 +486,10 @@
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Kirka.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kirka.io-hacks/hack.js'
             },
             {
                 text: 'Slope Hacks',
