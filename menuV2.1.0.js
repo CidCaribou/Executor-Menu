@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.8';
+    const ExecutorVersion = 'V2.1.9';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -439,7 +439,7 @@ winBtn.close:hover {
             {
                 text: 'Bloxd.io Hacks',
                 description: 'Spectra Hacked Client for Bloxd.io',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
                 text: 'Flappy Bird Hacks',
@@ -902,7 +902,7 @@ winBtn.close:hover {
             {
                 text: 'Bloxd.io Hacks',
                 description: 'Spectra Hacked Client for Bloxd.io',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
                 text: 'Wordle Unlimited Hack',
