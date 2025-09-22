@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.0.8';
+    const ExecutorVersion = 'V2.0.9';
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -126,7 +126,7 @@
             },
             {
                 text: 'Bloxd.io Hacks',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
                 text: 'Flappy Bird Hacks',
@@ -505,7 +505,7 @@
             },
             {
                 text: 'Bloxd.io Hacks',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Spectra-Client.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
                 text: 'ev.io hacks',
