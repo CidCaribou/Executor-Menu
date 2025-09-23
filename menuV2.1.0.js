@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.1.9';
+    const ExecutorVersion = 'V2.2.0';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -420,6 +420,11 @@ winBtn.close:hover {
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+            },
+            {
+                text: 'Voxiom.io Hacks',
+                description: 'Hacks for Voxiom.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
                 text: 'Kirka.io Hacks',
@@ -883,6 +888,11 @@ winBtn.close:hover {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Voxiom.io Hacks',
+                description: 'Hacks for Voxiom.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
                 text: 'Kirka.io Hacks',
