@@ -117,6 +117,10 @@
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
             },
             {
+                text: 'Voxiom.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
                 text: 'Kirka.io Hacks',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kirka.io-hacks/hack.js'
             },
@@ -486,6 +490,10 @@
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+            },
+            {
+                text: 'Voxiom.io Hacks',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
                 text: 'Kirka.io Hacks',
