@@ -1424,23 +1424,4 @@ winBtn.close:hover {
     if (homeBtn) {
         homeBtn.classList.add('selected');
     }
-
-    function onMove(e) {
-        if (!dragging) return;
-        const x = e.clientX - offX;
-        const y = e.clientY - offY;
-        host.style.right = (window.innerWidth - x) + 'px';
-        host.style.bottom = (window.innerHeight - y) + 'px';
-    }
-
-    function onUp() {
-        if (!dragging) return;
-        dragging = false;
-        handle.style.cursor = 'grab';
-        dragRegion.classList.remove('active');
-        topDragRegion.classList.remove('active');
-    }
-    document.addEventListener('mousemove', onMove);
-    document.addEventListener('mouseup', onUp);
-
 })();
