@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.2.1';
+    const ExecutorVersion = 'V2.2.2';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -704,7 +704,7 @@ winBtn.close:hover {
             {
                 text: 'Chrome Dino Cheats',
                 description: 'Chrome Dino game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Tus-Dino/loader.js'
             },
             {
                 text: '3D Webpage',
@@ -972,7 +972,7 @@ winBtn.close:hover {
             {
                 text: 'Chrome Dino Cheats',
                 description: 'Chrome Dino game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Tus-Dino/loader.js'
             },
             {
                 text: 'Duolingo Cheats',
