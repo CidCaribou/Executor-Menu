@@ -10,6 +10,7 @@
 // @grant        unsafeWindow
 // @grant        GM_info
 // @require      https://cdn.jsdelivr.net/npm/sweetalert2@11
+// @run-at       document-start
 // @updateURL    https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.user.js
 // @downloadURL  https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/Userscript/Menu.user.js
 // ==/UserScript==
