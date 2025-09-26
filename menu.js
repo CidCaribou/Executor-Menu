@@ -342,7 +342,7 @@
             },
             {
                 text: 'Chrome Dino Cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Tus-Dino/loader.js'
             },
             {
                 text: '3D Webpage',
@@ -557,7 +557,7 @@
             },
             {
                 text: 'Chrome Dino Cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Chrome_Dino_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Tus-Dino/loader.js'
             },
             {
                 text: 'Duolingo Cheats',
