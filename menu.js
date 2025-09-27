@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.2.4';
+    const ExecutorVersion = 'V2.2.5';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -14,6 +14,9 @@
     const shadow = host.attachShadow({
         mode: 'open'
     });
+  
+    host.style.right = (window.innerWidth - 600) / 2 + "px";
+    host.style.bottom = (window.innerHeight - 450) / 2 + "px";
 
     const style = document.createElement('style');
     style.textContent = `
