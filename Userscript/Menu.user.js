@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Executor
 // @namespace    https://executor-official.netlify.app/
-// @version      2.2.4
+// @version      2.2.5
 // @description  Easy script launcher with categories, search, and quick access.
 // @author       Wasd
 // @match        *://*/*
@@ -33,6 +33,9 @@ function launchExecutor() {
     const shadow = host.attachShadow({
         mode: 'open'
     });
+
+    host.style.right = (window.innerWidth - 600) / 2 + "px";
+    host.style.bottom = (window.innerHeight - 450) / 2 + "px";
 
     const style = document.createElement('style');
     style.textContent = `
