@@ -445,7 +445,7 @@ winBtn.close:hover {
             },
             {
                 text: 'Bloxd.io Hacks',
-                description: 'Spectra Hacked Client for Bloxd.io',
+                description: 'Progressive Hacked Client for Bloxd.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
@@ -913,7 +913,7 @@ winBtn.close:hover {
             },
             {
                 text: 'Bloxd.io Hacks',
-                description: 'Spectra Hacked Client for Bloxd.io',
+                description: 'Progressive Hacked Client for Bloxd.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Progressive-Client.js'
             },
             {
