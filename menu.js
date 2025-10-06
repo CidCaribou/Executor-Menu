@@ -696,7 +696,7 @@ winBtn.close:hover {
             {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks.js'
             },
             {
                 text: 'Cookie Clicker Cheats',
@@ -889,7 +889,7 @@ winBtn.close:hover {
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks.js'
             },
             {
                 text: 'Voxiom.io Hacks',
