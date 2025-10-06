@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.2.5';
+    const ExecutorVersion = 'V2.2.6';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -696,7 +696,7 @@ winBtn.close:hover {
             {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js'
             },
             {
                 text: 'Cookie Clicker Cheats',
@@ -889,7 +889,7 @@ winBtn.close:hover {
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/randomstuff69/blooketcheatsplus@main/GUI/Gui.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks_V2.js'
             },
             {
                 text: 'Voxiom.io Hacks',
