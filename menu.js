@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.2.8';
+    const ExecutorVersion = 'V2.2.9';
     const ID = 'executor-menu';
 
     const swalScript = document.createElement('script');
@@ -1164,7 +1164,7 @@ winBtn.close:hover {
 
     closeBtn.addEventListener('click', function(e) {
         e.stopPropagation();
-        hostEl.style.display = 'none';
+        document.getElementById('executor-menu').remove();
     });
     minBtn.addEventListener('click', function(e) {
         e.stopPropagation();
