@@ -20,7 +20,6 @@
 (function () {
   const SCRIPT_URL = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@latest/menu.js';
 
-  // Inject fetched code into the page context (not the userscript sandbox)
   function injectCode(code) {
     const script = document.createElement('script');
     script.textContent = code + `\n//# sourceURL=${SCRIPT_URL}`;
