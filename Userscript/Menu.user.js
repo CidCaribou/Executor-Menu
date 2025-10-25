@@ -32,7 +32,22 @@
     s.src = 'https://example.com/ev.io-user.js';
     document.head.appendChild(s);
   }
+  (function(){
+  const SRC = 'https://example.com/krunker-user.js'; // ← change this to your script URL
+  if (location.hostname !== 'krunker.io') return;
 
+  const raw = localStorage.getItem('injectkrunkerhacks');
+  const enabled = raw === 'true' || raw === '1' || raw === 'yes' || raw === 'on' || raw === 'True' || raw === 'TRUE';
+
+  if (!enabled) return;
+
+  const s = document.createElement('script');
+  s.src = SRC;
+  s.async = false; // run in document order
+  document.head.appendChild(s);
+  })();
+
+  
   async function launchExecutor() {
     try {
       const res = await fetch(SCRIPT_URL, { cache: 'no-cache' });
