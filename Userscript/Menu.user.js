@@ -27,6 +27,12 @@
     script.remove();
   }
 
+  if (location.hostname === 'ev.io') {
+    const s = document.createElement('script');
+    s.src = 'https://example.com/ev.io-user.js';
+    document.head.appendChild(s);
+  }
+
   async function launchExecutor() {
     try {
       const res = await fetch(SCRIPT_URL, { cache: 'no-cache' });
