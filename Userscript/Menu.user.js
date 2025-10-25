@@ -33,7 +33,7 @@
     document.head.appendChild(s);
   }
   (function(){
-  const SRC = 'https://example.com/krunker-user.js'; // ← change this to your script URL
+  const SRC = 'https://github.com/CidCaribou/Executor-Scripts/blob/main/krunker-hacks/krunker-centeral.js'; // ← change this to your script URL
   if (location.hostname !== 'krunker.io') return;
 
   const raw = localStorage.getItem('injectkrunkerhacks');
