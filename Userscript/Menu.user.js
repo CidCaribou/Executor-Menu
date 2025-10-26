@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Executor
 // @namespace    https://executor-official.netlify.app/
-// @version      2.2.9
+// @version      3.0.0
 // @description  Easy script launcher with categories, search, and quick access.
 // @author       Wasd
 // @match        *://*/*
