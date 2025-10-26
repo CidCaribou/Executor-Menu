@@ -467,7 +467,7 @@ winBtn.close:hover {
             {
                 text: 'Krunker.io Hacks',
                 description: '⚠️Only supported for Userscript Version!!⚠️',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-centeral.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-inject.js'
             },
             {
                 text: 'Kahoot Name Bypass',
@@ -910,7 +910,7 @@ winBtn.close:hover {
             {
                 text: 'Krunker.io Hacks',
                 description: '⚠️Only supported for Userscript Version!!⚠️',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-centeral.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-inject.js'
             },
             {
                 text: 'Kirka.io Hacks',
