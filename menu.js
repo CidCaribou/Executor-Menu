@@ -465,6 +465,11 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/emoji-rain.js'
             },
             {
+                text: 'Krunker.io Hacks',
+                description: '⚠️Only supported for Userscript Version!!⚠️',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-centeral.js'
+            },
+            {
                 text: 'Kahoot Name Bypass',
                 description: 'Bypass nickname restrictions kahoot',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
@@ -901,6 +906,11 @@ winBtn.close:hover {
                 text: 'Voxiom.io Hacks',
                 description: 'Hacks for Voxiom.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
+                text: 'Krunker.io Hacks',
+                description: '⚠️Only supported for Userscript Version!!⚠️',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-centeral.js'
             },
             {
                 text: 'Kirka.io Hacks',
