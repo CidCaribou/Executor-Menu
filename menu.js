@@ -10,12 +10,6 @@
     document.head.appendChild(s);
     }
     
-    if (location.hostname === 'krunker.io') {
-    const s = document.createElement('script');
-    s.src = 'https://example.com/ev.io.js';
-    document.head.appendChild(s);
-    }
-
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
     document.head.appendChild(swalScript);
