@@ -453,7 +453,7 @@ winBtn.close:hover {
             {
                 text: 'ev.io hacks',
                 description: 'Hacks for the Shooter Game ev.io',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io/ev-dot-io.js'
             },
             {
                 text: 'Bloxd.io Hacks',
@@ -936,7 +936,7 @@ winBtn.close:hover {
             {
                 text: 'ev.io hacks',
                 description: 'Hacks for the Shooter Game ev.io',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io-hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io/ev-dot-io.js'
             },
             {
                 text: 'Kahoot Name Bypass',
