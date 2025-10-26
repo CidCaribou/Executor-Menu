@@ -1,15 +1,15 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.3.0';
+    const ExecutorVersion = 'V2.3.2';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
-    const s = document.createElement('script');
-    s.src = 'https://example.com/ev.io.js';
-    document.head.appendChild(s);
+        const s = document.createElement('script');
+        s.src = 'https://example.com/ev.io.js';
+        document.head.appendChild(s);
     }
-    
+
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
     document.head.appendChild(swalScript);
@@ -20,7 +20,7 @@
     const shadow = host.attachShadow({
         mode: 'open'
     });
-  
+
     host.style.right = (window.innerWidth - 600) / 2 + "px";
     host.style.bottom = (window.innerHeight - 450) / 2 + "px";
 
@@ -427,7 +427,7 @@ winBtn.close:hover {
         'Home': [{
                 text: 'Dark&Light Mode',
                 description: 'Toggle between dark and light themes',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/LightDarkMode/optomized1.js',
             },
             {
                 text: 'Voxiom.io Hacks',
@@ -477,7 +477,9 @@ winBtn.close:hover {
             {
                 text: 'Clear Session Storage',
                 description: 'Clears session storage data for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js',
+                swal: 'true'
+
             },
             {
                 text: 'X-Ray',
@@ -507,22 +509,26 @@ winBtn.close:hover {
             {
                 text: 'Clear Cache',
                 description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js',
+                swal: 'true'
             },
             {
                 text: 'Clear IndexDB',
                 description: 'Clear IndexedDB storage for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js',
+                swal: 'true'
             },
             {
                 text: 'Inspect (Toggle)',
-                description: 'Toggle content editable for the page',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js'
+                description: 'Toggle content editable for the page ⚠️⚠️⚠️⚠️',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js',
+                swal: 'true'
             },
             {
                 text: 'Auto Scroll',
                 description: 'Automatically scroll the page',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js',
+                swal: 'true'
             },
             {
                 text: 'Old School',
@@ -587,7 +593,8 @@ winBtn.close:hover {
             {
                 text: 'Clear Local Storage',
                 description: 'Clear local storage for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js',
+                swal: 'true'
             },
             {
                 text: 'Prodigy Cheats',
@@ -602,7 +609,8 @@ winBtn.close:hover {
             {
                 text: 'Clear Cookies',
                 description: 'Clear all cookies for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js',
+                swal: 'true'
             },
             {
                 text: 'Custom Cursors',
@@ -789,7 +797,8 @@ winBtn.close:hover {
             {
                 text: 'Clear Cache',
                 description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js',
+                swal: 'true'
             },
             {
                 text: 'X-Ray',
@@ -804,12 +813,14 @@ winBtn.close:hover {
             {
                 text: 'Clear IndexDB',
                 description: 'Clear IndexedDB storage for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js',
+                swal: 'true'
             },
             {
                 text: 'Clear Session Storage',
                 description: 'Clears session storage data for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js',
+                swal: 'true'
             },
             {
                 text: 'Browser',
@@ -824,7 +835,8 @@ winBtn.close:hover {
             {
                 text: 'Auto Scroll',
                 description: 'Automatically scroll the page',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Auto-Scroll.js',
+                swal: 'true'
             },
             {
                 text: 'Color Picker',
@@ -834,12 +846,14 @@ winBtn.close:hover {
             {
                 text: 'Clear Local Storage',
                 description: 'Clear local storage for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js',
+                swal: 'true'
             },
             {
                 text: 'Clear Cookies',
                 description: 'Clear all cookies for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js',
+                swal: 'true'
             },
             {
                 text: 'Fps Viewer',
@@ -854,7 +868,8 @@ winBtn.close:hover {
             {
                 text: 'Inspect (Toggle)',
                 description: 'Toggle content editable for the page',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js',
+                swal: 'true'
             },
             {
                 text: 'Ego-Client',
@@ -910,7 +925,8 @@ winBtn.close:hover {
             {
                 text: 'Krunker.io Hacks',
                 description: '⚠️Only supported for Userscript Version!!⚠️',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-inject.js'
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-inject.js',
+                swal: 'true'
             },
             {
                 text: 'Kirka.io Hacks',
@@ -1083,7 +1099,7 @@ winBtn.close:hover {
     `;
             const check = row.querySelector('.check');
             row.addEventListener('click', () => {
-                executeScript(s.url, check);
+                executeScript(s.url, check, s.swal);
             });
             list.appendChild(row);
         });
@@ -1112,7 +1128,7 @@ winBtn.close:hover {
         renderScripts(selectedCategory, filter);
     });
 
-    function executeScript(url, check) {
+    function executeScript(url, check, swal) {
         if (!check) return;
 
         const defaultIconHtml = `<img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3430-thumb.png" alt="Execute" width="100%" height="100%">`;
@@ -1135,7 +1151,10 @@ winBtn.close:hover {
             script.onload = () => {
                 script.remove();
                 check.innerHTML = `<span style="font-size:24px;">✔</span>`;
-                showToast('Script loaded successfully', 'success');
+                if (swal !== 'true') {
+                    showToast('Script loaded successfully', 'success', 3000);
+                }
+
                 res();
             };
             script.onerror = (e) => {
@@ -1423,14 +1442,14 @@ winBtn.close:hover {
         });
     });
 
-    const showToast = (message, icon) => {
+    const showToast = (message, icon, timer) => {
         const swalInstance = Swal.fire({
             toast: true,
             position: 'bottom',
             icon: icon,
             title: message,
             showConfirmButton: false,
-            timer: 3000,
+            timer: timer,
             timerProgressBar: true,
             willClose: () => Swal.stopTimer()
         });
