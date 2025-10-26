@@ -29,25 +29,48 @@
 
   if (location.hostname === 'ev.io') {
     const s = document.createElement('script');
-    s.src = 'https://example.com/ev.io-user.js';
+    s.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io/hook.js';
     document.head.appendChild(s);
   }
-  (function(){
-  const SRC = 'https://github.com/CidCaribou/Executor-Scripts/blob/main/krunker-hacks/krunker-centeral.js'; // ← change this to your script URL
+
+(function(){
+  const SRC = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-centeral.js';
   if (location.hostname !== 'krunker.io') return;
 
   const raw = localStorage.getItem('injectkrunkerhacks');
   const enabled = raw === 'true' || raw === '1' || raw === 'yes' || raw === 'on' || raw === 'True' || raw === 'TRUE';
-
   if (!enabled) return;
 
-  const s = document.createElement('script');
-  s.src = SRC;
-  s.async = false; // run in document order
-  document.head.appendChild(s);
-  })();
+  try {
+    const l = document.createElement('link');
+    l.rel = 'preload';
+    l.as = 'script';
+    l.href = SRC;
+    document.head && document.head.appendChild(l);
+  } catch(e){}
 
-  
+  (async function(){
+    try {
+      const res = await fetch(SRC);
+      if (!res.ok) throw new Error('Fetch failed: ' + res.status);
+      const code = await res.text();
+
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.textContent = code;
+      (document.head || document.documentElement).prepend(s);
+
+      console.log('injectkrunkerhacks: injected inline from', SRC);
+    } catch (err) {
+      console.warn('injectkrunkerhacks: inline fetch failed, falling back to external <script>:', err);
+      const s2 = document.createElement('script');
+      s2.src = SRC;
+      s2.async = false;
+      (document.head || document.documentElement).appendChild(s2);
+    }
+  })();
+})();
+
   async function launchExecutor() {
     try {
       const res = await fetch(SCRIPT_URL, { cache: 'no-cache' });
