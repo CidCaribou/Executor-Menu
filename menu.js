@@ -435,6 +435,11 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
+                text: 'Cryzen.io Hacks',
+                description: 'Hacks for cryzen.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/cryzen.io-hacks.js'
+            },
+            {
                 text: 'Minefun.io hacks',
                 description: 'Hacks for minefun.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/minefun.io-hacks.js'
