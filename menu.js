@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.3.3';
+    const ExecutorVersion = 'V2.3.4';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -432,6 +432,11 @@ winBtn.close:hover {
             {
                 text: 'Voxiom.io Hacks',
                 description: 'Hacks for Voxiom.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
+                text: 'Narrow.one Hacks',
+                description: 'Hacks for narrow.one',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
@@ -931,6 +936,11 @@ winBtn.close:hover {
             {
                 text: 'Voxiom.io Hacks',
                 description: 'Hacks for Voxiom.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
+                text: 'Narrow.one Hacks',
+                description: 'Hacks for narrow.one',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
