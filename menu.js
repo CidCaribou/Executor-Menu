@@ -435,6 +435,11 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
             },
             {
+                text: 'Vectaria.io Hacks',
+                description: 'Hacks for Vectaria.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Vectaria.io-hacks.js'
+            },
+            {
                 text: 'Narrow.one Hacks',
                 description: 'Hacks for narrow.one',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
@@ -932,6 +937,11 @@ winBtn.close:hover {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks.js'
+            },
+            {
+                text: 'Vectaria.io Hacks',
+                description: 'Hacks for Vectaria.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Vectaria.io-hacks.js'
             },
             {
                 text: 'Voxiom.io Hacks',
