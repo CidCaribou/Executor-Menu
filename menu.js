@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.3.2';
+    const ExecutorVersion = 'V2.3.3';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -433,6 +433,11 @@ winBtn.close:hover {
                 text: 'Voxiom.io Hacks',
                 description: 'Hacks for Voxiom.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
+                text: 'Minefun.io hacks',
+                description: 'Hacks for minefun.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/minefun.io-hacks.js'
             },
             {
                 text: 'Kirka.io Hacks',
@@ -928,6 +933,11 @@ winBtn.close:hover {
                 description: '⚠️Only supported for Userscript Version!!⚠️',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/krunker-hacks/krunker-inject.js',
                 swal: 'true'
+            },
+            {
+                text: 'Minefun.io hacks',
+                description: 'Hacks for minefun.io',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/minefun.io-hacks.js'
             },
             {
                 text: 'Kirka.io Hacks',
