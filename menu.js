@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.3.5';
+    const ExecutorVersion = 'V2.3.6';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -620,7 +620,7 @@ winBtn.close:hover {
             {
                 text: 'Prodigy Cheats',
                 description: 'Cheats for Prodigy game',
-                url: 'https://pxi-fusion-menu.pages.dev/beta/main.js'
+                url: 'https://menu.pxi-fusion.com/pxi-2.0/main.js'
             },
             {
                 text: 'Matrix',
@@ -1002,7 +1002,7 @@ winBtn.close:hover {
             {
                 text: 'Prodigy Cheats',
                 description: 'Cheats for Prodigy game',
-                url: 'https://pxi-fusion-menu.pages.dev/beta/main.js'
+                url: 'https://menu.pxi-fusion.com/pxi-2.0/main.js'
             },
             {
                 text: 'wasm-patcher',
