@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.3.9';
+    const ExecutorVersion = 'V2.4.1';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -603,10 +603,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/wordle-hacks.js'
             },
             {
-                text: 'Clear Local Storage',
-                description: 'Clear local storage for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js',
-                swal: 'true'
+                text: 'Edit Local Storage',
+                description: 'Edit local storage for the site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Local-Storage-Editor.js',
             },
             {
                 text: 'Prodigy Cheats',
@@ -854,10 +853,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/color-picker.js'
             },
             {
-                text: 'Clear Local Storage',
-                description: 'Clear local storage for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Local-Storage-Clear.js',
-                swal: 'true'
+                text: 'Edit Local Storage',
+                description: 'Edit local storage for the site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Local-Storage-Editor.js',
             },
             {
                 text: 'Clear Cookies',
