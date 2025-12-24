@@ -6,7 +6,7 @@
 
     if (location.hostname === 'ev.io') {
         const s = document.createElement('script');
-        s.src = 'https://example.com/ev.io.js';
+        s.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io/hook.js';
         document.head.appendChild(s);
     }
 
