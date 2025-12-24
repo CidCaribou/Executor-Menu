@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.4.2';
+    const ExecutorVersion = 'V2.4.4';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -617,10 +617,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Matrix.js'
             },
             {
-                text: 'Clear Cookies',
-                description: 'Clear all cookies for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js',
-                swal: 'true'
+                text: 'Cookie Editor',
+                description: 'Edit all cookies for the site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/cookie-editor.js'
             },
             {
                 text: 'Custom Cursors',
@@ -856,10 +855,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Local-Storage-Editor.js',
             },
             {
-                text: 'Clear Cookies',
-                description: 'Clear all cookies for the site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cookies.js',
-                swal: 'true'
+                text: 'Cookie Editor',
+                description: 'Edit all cookies for the site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/cookie-editor.js'
             },
             {
                 text: 'Fps Viewer',
