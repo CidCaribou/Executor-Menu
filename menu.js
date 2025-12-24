@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.4.4';
+    const ExecutorVersion = 'V2.4.3';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
