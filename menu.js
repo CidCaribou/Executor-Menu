@@ -524,7 +524,7 @@ winBtn.close:hover {
             {
                 text: 'Clear Cache',
                 description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-cache.js',
                 swal: 'true'
             },
             {
@@ -812,7 +812,7 @@ winBtn.close:hover {
             {
                 text: 'Clear Cache',
                 description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/clear-cache.js',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-cache.js',
                 swal: 'true'
             },
             {
