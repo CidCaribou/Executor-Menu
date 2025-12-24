@@ -490,11 +490,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/kahoot-name-bypass.js'
             },
             {
-                text: 'Clear Session Storage',
-                description: 'Clears session storage data for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js',
-                swal: 'true'
-
+                text: 'Edit Session Storage',
+                description: 'A ui used to edit session storage data for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/edit-sessionStorage.js'
             },
             {
                 text: 'X-Ray',
@@ -522,10 +520,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js'
             },
             {
-                text: 'Clear Cache',
-                description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-cache.js',
-                swal: 'true'
+                text: 'View Cache',
+                description: 'View cache for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/view-cache.js'
             },
             {
                 text: 'Clear IndexDB',
@@ -810,10 +807,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Tab_Cloaker.js'
             },
             {
-                text: 'Clear Cache',
-                description: 'Clear browser cache for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-cache.js',
-                swal: 'true'
+                text: 'View Cache',
+                description: 'View cache for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/view-cache.js'
             },
             {
                 text: 'X-Ray',
@@ -832,10 +828,9 @@ winBtn.close:hover {
                 swal: 'true'
             },
             {
-                text: 'Clear Session Storage',
-                description: 'Clears session storage data for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/clear-sessionStorage.js',
-                swal: 'true'
+                text: 'Edit Session Storage',
+                description: 'A ui used to edit session storage data for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/edit-sessionStorage.js'
             },
             {
                 text: 'Browser',
