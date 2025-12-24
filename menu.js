@@ -525,10 +525,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/view-cache.js'
             },
             {
-                text: 'Clear IndexDB',
-                description: 'Clear IndexedDB storage for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/Clear-IndexDB.js',
-                swal: 'true'
+                text: 'IndexDB Viewer',
+                description: 'IndexedDB viewer for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/IndexDB-Editor.js'
             },
             {
                 text: 'Inspect (Toggle)',
@@ -821,10 +820,9 @@ winBtn.close:hover {
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/wasm-patcher.js'
             },
             {
-                text: 'Clear IndexDB',
-                description: 'Clear IndexedDB storage for the current site',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Clear-IndexDB.js',
-                swal: 'true'
+                text: 'IndexDB Viewer',
+                description: 'IndexedDB viewer for the current site',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/IndexDB-Editor.js'
             },
             {
                 text: 'Edit Session Storage',
