@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Executor",
-  "version": "2.3.8",
+  "version": "2.4.3",
   "description": "A multi-tool script",
   "update_url": "https://executor-official.netlify.app/updates.xml",
   "permissions": ["scripting", "activeTab", "tabs", "storage"],
