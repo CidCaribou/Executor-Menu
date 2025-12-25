@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Executor",
+  "version": "2.3.8",
+  "description": "A multi-tool script",
+  "update_url": "https://executor-official.netlify.app/updates.xml",
+  "permissions": ["scripting", "activeTab", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "64": "images/icon64.png",
+      "128": "images/icon128.png",
+      "256": "images/icon256.png", 
+      "512": "images/icon512.png"
+    }
+  },
+  "icons": {
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://ev.io/*"],
+      "js": ["hooks/ev.io-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": [
+      "lib/sweetalert2.min.js",
+      "lib/sweetalert2.min.css",
+      "menu-script.js"
+    ],
+    "matches": ["<all_urls>"]
+  }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
