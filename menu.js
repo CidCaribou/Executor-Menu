@@ -531,7 +531,7 @@ winBtn.close:hover {
             },
             {
                 text: 'Inspect (Toggle)',
-                description: 'Toggle content editable for the page ⚠️⚠️⚠️⚠️',
+                description: 'Toggle content editable for the page',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@refs/heads/main/inspect.js',
                 swal: 'true'
             },
