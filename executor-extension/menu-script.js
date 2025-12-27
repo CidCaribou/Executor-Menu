@@ -1,8 +1,14 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.4.3';
+    const ExecutorVersion = 'V2.4.4';
     const ID = 'executor-menu';
+
+    if (location.hostname === 'ev.io') {
+        const s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ev-dot-io/hook.js';
+        document.head.appendChild(s);
+    }
 
     const swalScript = document.createElement('script');
     swalScript.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
@@ -718,7 +724,7 @@ winBtn.close:hover {
             {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/xgui-client/X-GUI-BLOOKET-CLIENT@main/x-gui%20cheats/X-GUI.JS'
             },
             {
                 text: 'Cookie Clicker Cheats',
@@ -913,7 +919,7 @@ winBtn.close:hover {
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/Blooket%20Hacks%20/Blooket_Hacks.js'
+                url: 'https://cdn.jsdelivr.net/gh/xgui-client/X-GUI-BLOOKET-CLIENT@main/x-gui%20cheats/X-GUI.JS'
             },
             {
                 text: 'Vectaria.io Hacks',
