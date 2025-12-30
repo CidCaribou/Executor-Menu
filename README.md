@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Executor-8000ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://executor-official.netlify.app)
 [![GitHub stars](https://img.shields.io/github/stars/CidCaribou/Executor-Menu?style=for-the-badge&logo=github&color=FFD700)]([[https://github.com/CidCaribou/Executor-Menu/stargazers)
-[![License](https://img.shields.io/badge/License-Apache--2.0-2ea043?style=for-the-badge&logo=apache&logoColor=white]()
+[![License](https://img.shields.io/badge/License-Apache--2.0-2ea043?style=for-the-badge&logo=apache&logoColor=white)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/TnEPENaHU8)
 
 
