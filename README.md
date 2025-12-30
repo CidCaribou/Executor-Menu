@@ -1,5 +1,9 @@
 <h1>
-  <img src="assets/icon.png" alt="Executor Icon" width="50" height="50" style="vertical-align: middle;">
+  <img src="assets/icon.png" 
+       alt="Executor Icon" 
+       width="30" 
+       height="30" 
+       style="vertical-align: text-bottom; margin-right: 10px;">
   Executor
 </h1>
 
