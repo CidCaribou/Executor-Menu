@@ -3,7 +3,7 @@
        alt="Executor Icon" 
        width="40" 
        height="40" 
-       style="vertical-align: text-bottom; margin-right: 10px;">
+       style="vertical-align: -8px; margin-right: 10px;">
   Executor
 </h1>
 
