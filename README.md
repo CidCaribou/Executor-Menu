@@ -1,7 +1,8 @@
 <h1>
-  <img src="https://cdn.discordapp.com/attachments/1392865179640922172/1392865279024828506/image.png" alt="Executor Icon" width="50" height="50" style="vertical-align: middle;">
+  <img src="assets/icon.png" alt="Executor Icon" width="50" height="50" style="vertical-align: middle;">
   Executor
 </h1>
+
 
 [![Website](https://img.shields.io/badge/Website-Executor-8000ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://executor-official.netlify.app)
 [![GitHub stars](https://img.shields.io/github/stars/CidCaribou/Executor-Menu?style=for-the-badge&logo=github&color=FFD700)]([[https://github.com/CidCaribou/Executor-Menu/stargazers)
