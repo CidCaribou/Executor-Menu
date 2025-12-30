@@ -14,7 +14,7 @@
 
 
 
-**The most advanced, unbannable Blooket GUI – actively maintained and not patched!**
+**One of the best Bookmarklet scripts for school.**
 
 ---
 
