@@ -58,9 +58,6 @@
 - **Menu Created By:** CidCaribou 
 - **Executor UI Created By** simplywatching on discord
 - **Extra Credits** https://executor-official.netlify.app/docs
-
-- **JOIN THE DISCORD** [HERE](https://discord.gg/TnEPENaHU8)
-
 ---
 
 ## ❗ Disclaimer
