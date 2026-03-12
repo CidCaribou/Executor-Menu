@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.4.4';
+    const ExecutorVersion = 'V2.4.5';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -724,7 +724,7 @@ winBtn.close:hover {
             {
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/xgui-client/X-GUI-BLOOKET-CLIENT@main/x-gui%20cheats/X-GUI.JS'
+                url: 'https://gl.githack.com/CidCaribou/x-gui/-/raw/main/x-gui.js'
             },
             {
                 text: 'Cookie Clicker Cheats',
@@ -919,7 +919,7 @@ winBtn.close:hover {
         'Game Cheats': [{
                 text: 'Blooket Cheats',
                 description: 'Blooket game cheats',
-                url: 'https://cdn.jsdelivr.net/gh/xgui-client/X-GUI-BLOOKET-CLIENT@main/x-gui%20cheats/X-GUI.JS'
+                url: 'https://gl.githack.com/CidCaribou/x-gui/-/raw/main/x-gui.js'
             },
             {
                 text: 'Vectaria.io Hacks',
