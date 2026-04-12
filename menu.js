@@ -1,7 +1,7 @@
 (function() {
     if (document.getElementById('executor-menu')) return;
 
-    const ExecutorVersion = 'V2.4.5';
+    const ExecutorVersion = 'V2.4.6';
     const ID = 'executor-menu';
 
     if (location.hostname === 'ev.io') {
@@ -448,6 +448,11 @@ winBtn.close:hover {
                 text: 'Cryzen.io Hacks',
                 description: 'Hacks for cryzen.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/cryzen.io-hacks.js'
+            },
+            {
+                text: 'IXL Hacks',
+                description: 'Hacks for https://ixl.college',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ixl-hacks.js'
             },
             {
                 text: 'Minefun.io hacks',
@@ -930,6 +935,11 @@ winBtn.close:hover {
                 text: 'Voxiom.io Hacks',
                 description: 'Hacks for Voxiom.io',
                 url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/voxiom.io-hacks/loader.js'
+            },
+            {
+                text: 'IXL Hacks',
+                description: 'Hacks for https://ixl.college',
+                url: 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Scripts@main/ixl-hacks.js'
             },
             {
                 text: 'Narrow.one Hacks',
